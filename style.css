@@ -1,0 +1,176 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #0d0d0d;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  border-bottom: 3px solid #e63946; /* Orange line under active link */
+  padding-bottom: 5px; /* Adjust padding to ensure the line is visible */
+  font-weight: bold; /* Optional: make the text bold for emphasis */
+}
+
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.subtitle {
+  color: #e63946;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.role {
+  color: #e63946;
+  margin: 10px 0;
+}
+
+.description {
+  margin: 20px 0;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 1px solid #e63946;
+  color: #e63946;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e63946;
+  color: white;
+}
+
+.profile-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* About & Certificates & Contact Sections */
+.about,
+.certificates,
+.contact {
+  background-color: #1a1a1a;
+  padding: 60px 50px;
+  color: #fff;
+}
+
+.about h2,
+.certificates h2,
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about p,
+.certificates p,
+.contact p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+/* Projects section */
+.projects {
+  background-color: #1a1a1a;
+  padding: 60px 50px;
+  color: #fff;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.3em;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95em;
+  color: #ccc;
+}
